@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import resume from "./assets/cv_myr.pdf";
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Node.js"]; // Add more as needed
 const projects = [
@@ -92,7 +93,7 @@ function App() {
 
       <section id="information" className="information">
         <h2>Information</h2>
-        <a href="/assets/cv.pdf" download>
+        <a href={resume} download>
           Download my CV
         </a>
         <p>
