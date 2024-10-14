@@ -93,7 +93,7 @@ function App() {
 
       <section id="information" className="information">
         <h2>Information</h2>
-        <a href={resume} download>
+        <a href={`${resume}?v=${new Date().getTime()}`} download>
           Download my CV
         </a>
         <p>
