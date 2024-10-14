@@ -92,10 +92,9 @@ function App() {
 
       <section id="information" className="information">
         <h2>Information</h2>
-        <a href="/cv.pdf" download>
+        <a href="/assets/cv.pdf" download>
           Download my CV
         </a>
-        <p>Extra information about me goes here.</p>
         <p>
           Find me on{" "}
           <a
