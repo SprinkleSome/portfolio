@@ -7,15 +7,15 @@ const projects = [
     title: "Project 1",
     image:
       "https://cdn.popupsmart.com/uploaded/0d768ef9f2a361dc5a5c818d7a123eb7.png",
-    link: "https://github.com/sprinklesome/project1",
-    description: "Short project description here.",
+    link: "https://sprinklesome.github.io/gym_app/",
+    description: "Practice copy.",
   },
   {
     title: "Project 2",
     image:
       "https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg",
     link: "https://sprinklesome.github.io/tasty/",
-    description: "Another project description.",
+    description: "Recipe site with basic api usage.",
   },
   // Add more projects as needed
 ];
