@@ -1,38 +1,133 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-size {
+  width: 50%;
+  height: auto;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #222;
+  color: white;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.sticky-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.sticky-header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.sticky-header ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.sticky-header ul li a:hover {
+  border-bottom: 2px solid #00bfff;
+}
+.skills {
+  border: 10px solid lightgrey;
+  width: 70%;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.description,
+.skills,
+.projects,
+.information {
+  padding: 60px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.skills ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.skills ul li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 1.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-items: center;
+  padding: 20px;
+}
+
+.project-card {
+  position: relative;
+  width: 50%;
+  padding-top: 50%; /* Ensures the project card is a square */
+  background-color: white;
+  overflow: hidden;
+  border: 10px solid lightgrey;
+  border-radius: 10%;
+}
+
+.project-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.project-card:hover {
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.project-card:hover .project-info {
+  display: block;
+}
+
+.information a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.information a:hover {
+  text-decoration: underline;
 }
